@@ -1,10 +1,11 @@
+import Card from './components/Card'
 import './index.css'
 
 function App() {
 
   return (
     <>
-      <p className='text-3xl font-bold underline'>Interactive Rating Component</p>
+      <Card/>
     </>
   )
 }
