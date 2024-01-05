@@ -11,8 +11,8 @@ export default {
         'White': 'hsl(0, 0%, 100%)',
         'LightGrey': 'hsl(217, 12%, 63%)',
         'MediumGrey': 'hsl(216, 12%, 54%)',
-        'DarkBlue': 'hsl(213, 19%, 18%)',
-        'DarkBlueOpacity': 'hsl(213, 19%, 18%, 0.9)',
+        'DarkBlue': 'hsl(213, 20%, 18%)',
+        'MediumBlue': 'hsl(215.294, 13%, 26%)',
         'VeryDarkBlue': 'hsl(216, 12%, 8%)',
       },
       fontFamily: {

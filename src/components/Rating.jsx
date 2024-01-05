@@ -12,13 +12,13 @@ const Rating = ({ onRatingSubmit }) => {
 
     return (
         <div className='flex flex-col gap-4 p-5'>
-            <div className='w-10 h-10 rounded-full bg-DarkBlueOpacity flex items-center justify-center'>
+            <div className='w-10 h-10 flex flex-col justify-center rounded-full bg-MediumBlue'>
                 <img src={star} alt="Star" className='mx-auto' />
             </div>
-            <div>
+            <div className=' text-White'>
                 How did we do?
             </div>
-            <div>
+            <div className=' text-MediumGrey'>
                 Please let us know how we did with your support request. All feedback is appreciated
                 to help us improve our offering!
             </div>

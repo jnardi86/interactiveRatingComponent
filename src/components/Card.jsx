@@ -23,6 +23,7 @@ const Card = () => {
                         ) : (
                             <Greeting
                                 numberRating={numRating}
+                                setNumRating={setNumRating}
                             />
                         )
                 }
