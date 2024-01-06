@@ -1,10 +1,6 @@
 import React from 'react'
 
-const Greeting = ({numberRating, setNumRating}) => {
-
- const handleClick = () => {
-    setNumRating(null);
- }
+const Greeting = ({numberRating}) => {
 
 
   return (
@@ -22,9 +18,6 @@ const Greeting = ({numberRating, setNumRating}) => {
         </div>
         <div>
             text
-        </div>
-        <div>
-            <button onClick={handleClick}>Return</button>
         </div>
     </div>
   )

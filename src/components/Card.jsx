@@ -5,25 +5,24 @@ import Attribution from './Attribution';
 
 const Card = () => {
 
-    const [numRating, setNumRating] = useState(null)
+    const [selectedRating, setSelectedRating] = useState(null)
 
-    const handleRatingSubmit = (selectedNumber) => {
-        setNumRating(selectedNumber);
+    const handleRatingSubmit = (selectedRatingNumber) => {
+        setSelectedRating(selectedRatingNumber);
     }
 
     return (
         <section className='w-full min-w-full min-h-screen bg-VeryDarkBlue flex flex-col items-center justify-center'>
-            <div className='w-80 min-h-80 bg-DarkBlue mx-auto rounded-lg'>
+            <div className='w-80 min-h-72 bg-DarkBlue mx-auto rounded-xl lg:w-[420px] lg:min-h-[388px]'>
                 {
-                    numRating === null ?
+                    selectedRating === null ?
                         (
                             <Rating
                                 onRatingSubmit={handleRatingSubmit}
                             />
                         ) : (
                             <Greeting
-                                numberRating={numRating}
-                                setNumRating={setNumRating}
+                                numberRating={selectedRating}
                             />
                         )
                 }
