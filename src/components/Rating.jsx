@@ -22,14 +22,14 @@ const Rating = ({ onRatingSubmit }) => {
             <div className='w-10 h-10 flex flex-col justify-center rounded-full bg-MediumBlue'>
                 <img src={star} alt="Star" className='mx-auto' />
             </div>
-            <div className='text-White font-Overpass font-bold text-xl'>
+            <div className='text-White font-Overpass font-bold text-2xl'>
                 How did we do?
             </div>
-            <div className=' text-MediumGrey font-Overpass text-[15px]'>
+            <div className=' text-LightGrey font-Overpass text-[15px]'>
                 Please let us know how we did with your support request. All feedback is appreciated
                 to help us improve our offering!
             </div>
-            <div className='flex justify-items-start space-x-5 pt-3'>
+            <div className='flex justify-items-start space-x-6 pt-3 lg:space-x-8'>
                 {
                     ratingNumber.map((numRating) => (
                         <div
@@ -37,8 +37,8 @@ const Rating = ({ onRatingSubmit }) => {
                             onClick={
                                 () => handleSelectedNumber(numRating.value)
                             }
-                            className={`w-10 h-10 flex justify-center items-center rounded-full font-Overpass text-MediumGrey cursor-pointer text-xs 
-                            ${selectedNumber === numRating.value ? 'bg-Orange' : 'bg-MediumBlue hover:bg-LightGrey'}
+                            className={`w-10 h-10 flex justify-center items-center rounded-full font-Overpass text-LightGrey cursor-pointer text-sm lg:w-12 lg:h-12 lg:text-base 
+                            ${selectedNumber === numRating.value ? 'bg-Orange' : 'bg-MediumBlue hover:bg-LightGrey hover:text-White'}
                             `}
                         >
                             {numRating.value}

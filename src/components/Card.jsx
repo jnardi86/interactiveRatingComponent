@@ -13,7 +13,7 @@ const Card = () => {
 
     return (
         <section className='w-full min-w-full min-h-screen bg-VeryDarkBlue flex flex-col items-center justify-center'>
-            <div className='w-80 min-h-72 bg-DarkBlue mx-auto rounded-xl lg:w-[420px] lg:min-h-[388px]'>
+            <div className='w-[340px] min-h-[375px] bg-DarkBlue mx-auto rounded-xl lg:w-[440px] lg:min-h-[388px]'>
                 {
                     selectedRating === null ?
                         (
